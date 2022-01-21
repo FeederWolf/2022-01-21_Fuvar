@@ -16,7 +16,18 @@ namespace _2022_01_21_Fuvar
             {
                 taxi.Add(new temitrohogsz(s));
             }
-            Console.WriteLine($"3. feladat: {taxi.Count} fucar");
+            Console.WriteLine($"3. feladat: {taxi.Count} fuvar");
+            double dij = 0;
+            int fuvar = 0;
+            foreach (var i in taxi)
+            {
+                if (i.id == 6185)
+                {
+                    dij += i.bor;
+                    fuvar++;
+                }
+            }
+            Console.WriteLine($"4. feladat: {fuvar} fuvar alatt: {dij}$");
 
         }
     }
