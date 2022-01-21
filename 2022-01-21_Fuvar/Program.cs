@@ -11,6 +11,7 @@ namespace _2022_01_21_Fuvar
     {
         static void Main(string[] args)
         {
+
             List<temitrohogsz> taxi = new List<temitrohogsz>();
             foreach (var s in File.ReadAllLines("fuvar.csv"))
             {
