@@ -11,12 +11,12 @@ namespace _2022_01_21_Fuvar
     {
         static void Main(string[] args)
         {
-
             List<temitrohogsz> taxi = new List<temitrohogsz>();
-            foreach (var s in File.ReadAllLines("fuvar.csv"))
+            foreach (var s in File.ReadAllLines("fuvar.csv").Skip(1))
             {
                 taxi.Add(new temitrohogsz(s));
             }
+            Console.WriteLine($"3. feladat: {taxi.Count} fucar");
 
         }
     }
