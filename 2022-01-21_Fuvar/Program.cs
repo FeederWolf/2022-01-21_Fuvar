@@ -12,7 +12,7 @@ namespace _2022_01_21_Fuvar
         static void Main(string[] args)
         {
             List<temitrohogsz> taxi = new List<temitrohogsz>();
-            foreach (var s in File.ReadAllLines("fuvar.csv").Skip(1))
+            foreach (var s in File.ReadAllLines("fuvar.csv", Encoding.UTF8).Skip(1))
             {
                 taxi.Add(new temitrohogsz(s));
             }
@@ -57,13 +57,12 @@ namespace _2022_01_21_Fuvar
             Console.WriteLine($"\tingyenes: {f} fuvar");
             Console.WriteLine($"\tismeretlen: {idk} fuvar");
 
-            double k = 0;
-
+            double t = 0;
             foreach (var i in taxi)
             {
-                    k += i.tavolsag * 1.6;
+                    t += i.tavolsag * 1.6;
             }
-            Console.WriteLine("6. feladat: {0:0.00}km", k);
+            Console.WriteLine("6. feladat: {0:0.00}km", t);
 
             temitrohogsz vmax = taxi[0];
             foreach (var i in taxi)
@@ -79,6 +78,16 @@ namespace _2022_01_21_Fuvar
             Console.WriteLine($"\tMegtett távolság: {vmax.tavolsag} km");
             Console.WriteLine($"\tViteldíj: {vmax.viteldij}$");
 
+            Console.WriteLine("8. feladat: hibak.txt");
+            StreamWriter sv = File.CreateText("hibak.txt");
+            DateTime d;
+            foreach (var i in taxi)
+            {
+               if (i.idotartalom > 0 && i.viteldij > 0 && i.tavolsag == 0)
+                {
+                   sv.WriteLine($"{i.id};{i.indul};{i.idotartalom};{i.tavolsag};{i.viteldij};{i.bor};{i.fizetes_modja}", Encoding.UTF8);
+                }
+            }
         }
     }
 }
