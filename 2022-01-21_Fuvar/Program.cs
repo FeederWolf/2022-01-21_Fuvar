@@ -29,7 +29,6 @@ namespace _2022_01_21_Fuvar
             }
             Console.WriteLine($"4. feladat: {fuvar} fuvar alatt: {dij}$");
 
-            //Dictionary<int, int> stat = new Dictionary<int, int>();
             int bk = 0;
             int nbk = 0;
             int f = 0;
@@ -58,6 +57,13 @@ namespace _2022_01_21_Fuvar
             Console.WriteLine($"\tingyenes: {f} fuvar");
             Console.WriteLine($"\tismeretlen: {idk} fuvar");
 
+            double k = 0;
+
+            foreach (var i in taxi)
+            {
+                    k += i.tavolsag * 1.6;
+            }
+            Console.WriteLine("6. feladat: {0:0.00}km", k);
         }
     }
 }
