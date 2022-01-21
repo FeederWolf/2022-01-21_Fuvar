@@ -64,6 +64,21 @@ namespace _2022_01_21_Fuvar
                     k += i.tavolsag * 1.6;
             }
             Console.WriteLine("6. feladat: {0:0.00}km", k);
+
+            temitrohogsz vmax = taxi[0];
+            foreach (var i in taxi)
+            {
+                if (i.idotartalom > vmax.idotartalom)
+                {
+                    vmax = i;
+                }
+            }
+            Console.WriteLine("7. feladat: Leghosszabb fuvar:");
+            Console.WriteLine($"\tFuvar hossza: {vmax.idotartalom} másodperc");
+            Console.WriteLine($"\tTaxi azonosító: {vmax.id}");
+            Console.WriteLine($"\tMegtett távolság: {vmax.tavolsag} km");
+            Console.WriteLine($"\tViteldíj: {vmax.viteldij}$");
+
         }
     }
 }
