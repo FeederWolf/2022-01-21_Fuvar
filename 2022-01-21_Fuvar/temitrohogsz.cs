@@ -14,16 +14,18 @@ namespace _2022_01_21_Fuvar
         public double tavolsag { get; set; }
         public double viteldij { get; set; }
         public double bor { get; set; }
-        public string bankkartya { get; set; }
+        public string fizetes_modja { get; set; }
 
         public temitrohogsz(string sor) {
             string[] s = sor.Split(';');
+
             id = int.Parse(s[0]);
             indul = DateTime.Parse(s[1]);
-            tavolsag = double.Parse(s[2]);
-            viteldij = double.Parse(s[3]);
-            bor = double.Parse(s[4]);
-            bankkartya = s[5];
+            idotartalom = int.Parse(s[2]);
+            tavolsag = double.Parse(s[3]);
+            viteldij = double.Parse(s[4]);
+            bor = double.Parse(s[5]);
+            fizetes_modja = s[6];
 
         }
 
