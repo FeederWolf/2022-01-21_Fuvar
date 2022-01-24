@@ -57,7 +57,7 @@ namespace FuvarGOUI
             this.btnKilepes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnKilepes.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnKilepes.ForeColor = System.Drawing.Color.Red;
-            this.btnKilepes.Location = new System.Drawing.Point(648, 388);
+            this.btnKilepes.Location = new System.Drawing.Point(12, 388);
             this.btnKilepes.Name = "btnKilepes";
             this.btnKilepes.Size = new System.Drawing.Size(140, 50);
             this.btnKilepes.TabIndex = 0;
@@ -235,7 +235,8 @@ namespace FuvarGOUI
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(494, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Forras_mod);
             this.Controls.Add(this.Borravalo);
@@ -255,6 +256,7 @@ namespace FuvarGOUI
             this.Controls.Add(this.T_Idotartalom);
             this.Controls.Add(this.T_Indulas);
             this.Controls.Add(this.btnKilepes);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Esemény kezelő metódus";
             this.ResumeLayout(false);

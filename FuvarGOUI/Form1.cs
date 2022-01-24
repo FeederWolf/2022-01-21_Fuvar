@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using _2022_01_21_Fuvar; //fájl split
 
 namespace FuvarGOUI
 {
@@ -19,7 +20,7 @@ namespace FuvarGOUI
 
         private void btnKilepes_Click(object sender, EventArgs e)
         {
-            
+            Close();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
