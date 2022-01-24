@@ -12,8 +12,6 @@ namespace FuvarGOUI
 {
     public partial class Form1 : Form
     {
-        public int lajos = 0;
-        public string valami = "";
         public Form1()
         {
             InitializeComponent();
@@ -21,15 +19,7 @@ namespace FuvarGOUI
 
         private void btnKilepes_Click(object sender, EventArgs e)
         {
-            if (lajos == 1)
-            {
-                Close();
-            }
-            else if (lajos == 0)
-            {
-                valami = "Az igen";
-                T_TaxiID.Text = valami;
-            }
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

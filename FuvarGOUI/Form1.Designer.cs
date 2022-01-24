@@ -86,21 +86,29 @@ namespace FuvarGOUI
             // 
             // btnBetolt
             // 
+            this.btnBetolt.BackColor = System.Drawing.Color.Fuchsia;
+            this.btnBetolt.Cursor = System.Windows.Forms.Cursors.No;
+            this.btnBetolt.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBetolt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnBetolt.Location = new System.Drawing.Point(12, 155);
             this.btnBetolt.Name = "btnBetolt";
             this.btnBetolt.Size = new System.Drawing.Size(75, 23);
             this.btnBetolt.TabIndex = 3;
             this.btnBetolt.Text = "Betöltés";
-            this.btnBetolt.UseVisualStyleBackColor = true;
+            this.btnBetolt.UseVisualStyleBackColor = false;
             // 
             // btnRendez
             // 
+            this.btnRendez.BackColor = System.Drawing.Color.Blue;
+            this.btnRendez.Cursor = System.Windows.Forms.Cursors.No;
+            this.btnRendez.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.btnRendez.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnRendez.Location = new System.Drawing.Point(154, 155);
             this.btnRendez.Name = "btnRendez";
             this.btnRendez.Size = new System.Drawing.Size(75, 23);
             this.btnRendez.TabIndex = 4;
             this.btnRendez.Text = "Rendezés";
-            this.btnRendez.UseVisualStyleBackColor = true;
+            this.btnRendez.UseVisualStyleBackColor = false;
             // 
             // listBox
             // 
