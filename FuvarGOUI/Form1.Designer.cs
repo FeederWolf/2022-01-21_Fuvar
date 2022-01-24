@@ -31,23 +31,23 @@ namespace FuvarGOUI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnKilepes = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.T_Indulas = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.btnBetolt = new System.Windows.Forms.Button();
+            this.btnRendez = new System.Windows.Forms.Button();
+            this.listBox = new System.Windows.Forms.ListBox();
             this.Indulas = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.T_TaxiID = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.T_Idotartalom = new System.Windows.Forms.TextBox();
             this.Idotartalom = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.T_Tavolsag = new System.Windows.Forms.TextBox();
             this.Tavolsag = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.T_Viteldij = new System.Windows.Forms.TextBox();
             this.Viteldij = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.T_Borravalo = new System.Windows.Forms.TextBox();
             this.Borravalo = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.T_Forras_mod = new System.Windows.Forms.TextBox();
             this.Forras_mod = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -65,13 +65,13 @@ namespace FuvarGOUI
             this.btnKilepes.UseVisualStyleBackColor = true;
             this.btnKilepes.Click += new System.EventHandler(this.btnKilepes_Click);
             // 
-            // textBox1
+            // T_Indulas
             // 
-            this.textBox1.Location = new System.Drawing.Point(321, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.T_Indulas.Location = new System.Drawing.Point(321, 92);
+            this.T_Indulas.Name = "T_Indulas";
+            this.T_Indulas.Size = new System.Drawing.Size(100, 23);
+            this.T_Indulas.TabIndex = 1;
+            this.T_Indulas.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -84,32 +84,32 @@ namespace FuvarGOUI
             this.label1.TabIndex = 2;
             this.label1.Text = "Fuvar Adatai";
             // 
-            // button1
+            // btnBetolt
             // 
-            this.button1.Location = new System.Drawing.Point(12, 155);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBetolt.Location = new System.Drawing.Point(12, 155);
+            this.btnBetolt.Name = "btnBetolt";
+            this.btnBetolt.Size = new System.Drawing.Size(75, 23);
+            this.btnBetolt.TabIndex = 3;
+            this.btnBetolt.Text = "Betöltés";
+            this.btnBetolt.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnRendez
             // 
-            this.button2.Location = new System.Drawing.Point(154, 155);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRendez.Location = new System.Drawing.Point(154, 155);
+            this.btnRendez.Name = "btnRendez";
+            this.btnRendez.Size = new System.Drawing.Size(75, 23);
+            this.btnRendez.TabIndex = 4;
+            this.btnRendez.Text = "Rendezés";
+            this.btnRendez.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // listBox
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(217, 94);
-            this.listBox1.TabIndex = 5;
+            this.listBox.FormattingEnabled = true;
+            this.listBox.ItemHeight = 15;
+            this.listBox.Location = new System.Drawing.Point(12, 12);
+            this.listBox.Name = "listBox";
+            this.listBox.Size = new System.Drawing.Size(217, 94);
+            this.listBox.TabIndex = 5;
             // 
             // Indulas
             // 
@@ -120,13 +120,13 @@ namespace FuvarGOUI
             this.Indulas.TabIndex = 6;
             this.Indulas.Text = "Indulás:";
             // 
-            // textBox2
+            // T_TaxiID
             // 
-            this.textBox2.Location = new System.Drawing.Point(321, 46);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.T_TaxiID.Location = new System.Drawing.Point(321, 46);
+            this.T_TaxiID.Name = "T_TaxiID";
+            this.T_TaxiID.Size = new System.Drawing.Size(100, 23);
+            this.T_TaxiID.TabIndex = 1;
+            this.T_TaxiID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -137,13 +137,13 @@ namespace FuvarGOUI
             this.label3.TabIndex = 6;
             this.label3.Text = "TaxiID:";
             // 
-            // textBox3
+            // T_Idotartalom
             // 
-            this.textBox3.Location = new System.Drawing.Point(321, 136);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 1;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.T_Idotartalom.Location = new System.Drawing.Point(321, 136);
+            this.T_Idotartalom.Name = "T_Idotartalom";
+            this.T_Idotartalom.Size = new System.Drawing.Size(100, 23);
+            this.T_Idotartalom.TabIndex = 1;
+            this.T_Idotartalom.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Idotartalom
             // 
@@ -154,13 +154,13 @@ namespace FuvarGOUI
             this.Idotartalom.TabIndex = 6;
             this.Idotartalom.Text = "Idotart.:";
             // 
-            // textBox4
+            // T_Tavolsag
             // 
-            this.textBox4.Location = new System.Drawing.Point(321, 182);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 1;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.T_Tavolsag.Location = new System.Drawing.Point(321, 182);
+            this.T_Tavolsag.Name = "T_Tavolsag";
+            this.T_Tavolsag.Size = new System.Drawing.Size(100, 23);
+            this.T_Tavolsag.TabIndex = 1;
+            this.T_Tavolsag.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Tavolsag
             // 
@@ -171,13 +171,13 @@ namespace FuvarGOUI
             this.Tavolsag.TabIndex = 6;
             this.Tavolsag.Text = "Távolság:";
             // 
-            // textBox5
+            // T_Viteldij
             // 
-            this.textBox5.Location = new System.Drawing.Point(321, 228);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 23);
-            this.textBox5.TabIndex = 1;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.T_Viteldij.Location = new System.Drawing.Point(321, 228);
+            this.T_Viteldij.Name = "T_Viteldij";
+            this.T_Viteldij.Size = new System.Drawing.Size(100, 23);
+            this.T_Viteldij.TabIndex = 1;
+            this.T_Viteldij.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Viteldij
             // 
@@ -188,13 +188,13 @@ namespace FuvarGOUI
             this.Viteldij.TabIndex = 6;
             this.Viteldij.Text = "Viteldíj:";
             // 
-            // textBox6
+            // T_Borravalo
             // 
-            this.textBox6.Location = new System.Drawing.Point(321, 275);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 23);
-            this.textBox6.TabIndex = 1;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.T_Borravalo.Location = new System.Drawing.Point(321, 275);
+            this.T_Borravalo.Name = "T_Borravalo";
+            this.T_Borravalo.Size = new System.Drawing.Size(100, 23);
+            this.T_Borravalo.TabIndex = 1;
+            this.T_Borravalo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Borravalo
             // 
@@ -205,13 +205,13 @@ namespace FuvarGOUI
             this.Borravalo.TabIndex = 6;
             this.Borravalo.Text = "Borravaló:";
             // 
-            // textBox7
+            // T_Forras_mod
             // 
-            this.textBox7.Location = new System.Drawing.Point(321, 325);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 23);
-            this.textBox7.TabIndex = 1;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.T_Forras_mod.Location = new System.Drawing.Point(321, 325);
+            this.T_Forras_mod.Name = "T_Forras_mod";
+            this.T_Forras_mod.Size = new System.Drawing.Size(100, 23);
+            this.T_Forras_mod.TabIndex = 1;
+            this.T_Forras_mod.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Forras_mod
             // 
@@ -235,17 +235,17 @@ namespace FuvarGOUI
             this.Controls.Add(this.Tavolsag);
             this.Controls.Add(this.Idotartalom);
             this.Controls.Add(this.Indulas);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listBox);
+            this.Controls.Add(this.btnRendez);
+            this.Controls.Add(this.btnBetolt);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.T_TaxiID);
+            this.Controls.Add(this.T_Forras_mod);
+            this.Controls.Add(this.T_Borravalo);
+            this.Controls.Add(this.T_Viteldij);
+            this.Controls.Add(this.T_Tavolsag);
+            this.Controls.Add(this.T_Idotartalom);
+            this.Controls.Add(this.T_Indulas);
             this.Controls.Add(this.btnKilepes);
             this.Name = "Form1";
             this.Text = "Esemény kezelő metódus";
@@ -257,23 +257,23 @@ namespace FuvarGOUI
         #endregion
 
         private System.Windows.Forms.Button btnKilepes;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox T_Indulas;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btnBetolt;
+        private System.Windows.Forms.Button btnRendez;
+        private System.Windows.Forms.ListBox listBox;
         private System.Windows.Forms.Label Indulas;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox T_TaxiID;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox T_Idotartalom;
         private System.Windows.Forms.Label Idotartalom;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox T_Tavolsag;
         private System.Windows.Forms.Label Tavolsag;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox T_Viteldij;
         private System.Windows.Forms.Label Viteldij;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox T_Borravalo;
         private System.Windows.Forms.Label Borravalo;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox T_Forras_mod;
         private System.Windows.Forms.Label Forras_mod;
     }
 }

@@ -28,12 +28,13 @@ namespace FuvarGOUI
             else if (lajos == 0)
             {
                 valami = "Az igen";
+                T_TaxiID.Text = valami;
             }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            textBox1.Text = valami;
+            
         }
     }
 }
