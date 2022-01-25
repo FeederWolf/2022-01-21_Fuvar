@@ -14,7 +14,7 @@ namespace FuvarGOUI
 {
     public partial class Form1 : Form
     {
-        List<Fuvar> taxi = new List<Fuvar>();
+        List<Fuvar> taxik = new List<Fuvar>();
         public Form1()
         {
             InitializeComponent();
@@ -32,26 +32,35 @@ namespace FuvarGOUI
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            ControlBox = false;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
 
         }
         private void btnBetolt_Click(object sender, EventArgs e)
         {
             foreach (var s in File.ReadAllLines("fuvar.csv").Skip(1))
             {
-                taxi.Add(new Fuvar(s));
+                taxik.Add(new Fuvar(s));
             }
-            //listBox.Items.Add("asd");
 
+            listBox.Items.Clear(); //ne jelenjen meg kétszer
+            foreach (var f in taxik) //taxik = fent
+            {
+                listBox.Items.Add(f);
+            }
+            listBox.DisplayMember = "id"; //mit akarunk?s
+        }
+
+        private void btnRendez_Click(object sender, EventArgs e)
+        {
+            
+                taxik = taxik.OrderBy(x => x.id).ToList();
+                listBox.DataSource = taxik;
         }
 
         private void listBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void bntClear_Click(object sender, EventArgs e)
-        {
-            listBox.Items.Clear();
         }
     }
 }
