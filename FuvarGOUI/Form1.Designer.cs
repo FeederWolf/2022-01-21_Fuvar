@@ -49,6 +49,7 @@ namespace FuvarGOUI
             this.Borravalo = new System.Windows.Forms.Label();
             this.T_Forras_mod = new System.Windows.Forms.TextBox();
             this.Forras_mod = new System.Windows.Forms.Label();
+            this.bntClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnKilepes
@@ -69,7 +70,7 @@ namespace FuvarGOUI
             // 
             this.T_Indulas.Location = new System.Drawing.Point(321, 92);
             this.T_Indulas.Name = "T_Indulas";
-            this.T_Indulas.Size = new System.Drawing.Size(100, 23);
+            this.T_Indulas.Size = new System.Drawing.Size(126, 23);
             this.T_Indulas.TabIndex = 1;
             this.T_Indulas.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -90,12 +91,13 @@ namespace FuvarGOUI
             this.btnBetolt.Cursor = System.Windows.Forms.Cursors.No;
             this.btnBetolt.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBetolt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBetolt.Location = new System.Drawing.Point(12, 155);
+            this.btnBetolt.Location = new System.Drawing.Point(12, 325);
             this.btnBetolt.Name = "btnBetolt";
             this.btnBetolt.Size = new System.Drawing.Size(75, 23);
             this.btnBetolt.TabIndex = 3;
             this.btnBetolt.Text = "Betöltés";
             this.btnBetolt.UseVisualStyleBackColor = false;
+            this.btnBetolt.Click += new System.EventHandler(this.btnBetolt_Click);
             // 
             // btnRendez
             // 
@@ -103,7 +105,7 @@ namespace FuvarGOUI
             this.btnRendez.Cursor = System.Windows.Forms.Cursors.No;
             this.btnRendez.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.btnRendez.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRendez.Location = new System.Drawing.Point(154, 155);
+            this.btnRendez.Location = new System.Drawing.Point(154, 325);
             this.btnRendez.Name = "btnRendez";
             this.btnRendez.Size = new System.Drawing.Size(75, 23);
             this.btnRendez.TabIndex = 4;
@@ -116,8 +118,9 @@ namespace FuvarGOUI
             this.listBox.ItemHeight = 15;
             this.listBox.Location = new System.Drawing.Point(12, 12);
             this.listBox.Name = "listBox";
-            this.listBox.Size = new System.Drawing.Size(217, 94);
+            this.listBox.Size = new System.Drawing.Size(217, 289);
             this.listBox.TabIndex = 5;
+            this.listBox.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
             // 
             // Indulas
             // 
@@ -230,6 +233,19 @@ namespace FuvarGOUI
             this.Forras_mod.TabIndex = 6;
             this.Forras_mod.Text = "Forrás módja:";
             // 
+            // bntClear
+            // 
+            this.bntClear.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bntClear.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.bntClear.ForeColor = System.Drawing.Color.Aqua;
+            this.bntClear.Location = new System.Drawing.Point(90, 324);
+            this.bntClear.Name = "bntClear";
+            this.bntClear.Size = new System.Drawing.Size(58, 23);
+            this.bntClear.TabIndex = 7;
+            this.bntClear.Text = "Törlés";
+            this.bntClear.UseVisualStyleBackColor = false;
+            this.bntClear.Click += new System.EventHandler(this.bntClear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -237,6 +253,7 @@ namespace FuvarGOUI
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(494, 450);
+            this.Controls.Add(this.bntClear);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Forras_mod);
             this.Controls.Add(this.Borravalo);
@@ -259,6 +276,7 @@ namespace FuvarGOUI
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Esemény kezelő metódus";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,6 +303,7 @@ namespace FuvarGOUI
         private System.Windows.Forms.Label Borravalo;
         private System.Windows.Forms.TextBox T_Forras_mod;
         private System.Windows.Forms.Label Forras_mod;
+        private System.Windows.Forms.Button bntClear;
     }
 }
 

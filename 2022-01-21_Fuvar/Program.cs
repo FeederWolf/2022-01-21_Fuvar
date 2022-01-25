@@ -80,7 +80,6 @@ namespace _2022_01_21_Fuvar
 
             Console.WriteLine("8. feladat: hibak.txt");
             StreamWriter sv = File.CreateText("hibak.txt");
-            DateTime d;
             foreach (var i in taxi)
             {
                if (i.idotartalom > 0 && i.viteldij > 0 && i.tavolsag == 0)

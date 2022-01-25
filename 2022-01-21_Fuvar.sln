@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2022-01-21_Fuvar", "2022-01-21_Fuvar\2022-01-21_Fuvar.csproj", "{C77E59E3-6651-452E-BE31-7D427A8574A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuvarGOUI", "FuvarGOUI\FuvarGOUI.csproj", "{5AE4FABC-3EDF-427E-A7A3-3DA54ECDC973}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuvarGOUI", "FuvarGOUI\FuvarGOUI.csproj", "{5AE4FABC-3EDF-427E-A7A3-3DA54ECDC973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{BA77BD0C-5879-4088-BD30-29885334078D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5AE4FABC-3EDF-427E-A7A3-3DA54ECDC973}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AE4FABC-3EDF-427E-A7A3-3DA54ECDC973}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AE4FABC-3EDF-427E-A7A3-3DA54ECDC973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA77BD0C-5879-4088-BD30-29885334078D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA77BD0C-5879-4088-BD30-29885334078D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA77BD0C-5879-4088-BD30-29885334078D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA77BD0C-5879-4088-BD30-29885334078D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

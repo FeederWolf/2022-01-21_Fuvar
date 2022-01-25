@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace _2022_01_21_Fuvar
+
+namespace ClassLibrary
 {
-    class temitrohogsz
+    public class Fuvar
     {
         public int id { get; set; }
         public DateTime indul { get; set; }
@@ -17,7 +18,8 @@ namespace _2022_01_21_Fuvar
         public double bor { get; set; }
         public string fizetes_modja { get; set; }
 
-        public temitrohogsz(string sor) {
+        public Fuvar(string sor)
+        {
             string[] s = sor.Split(';');
 
             id = int.Parse(s[0]);
@@ -27,7 +29,7 @@ namespace _2022_01_21_Fuvar
             viteldij = double.Parse(s[4]);
             bor = double.Parse(s[5]);
             fizetes_modja = s[6];
-
         }
+
     }
 }
